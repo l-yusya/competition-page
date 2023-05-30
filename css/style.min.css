@@ -621,7 +621,7 @@ body.locked {
 }
 
 .header__logo img {
-  width: 100%;
+  /* width: 100%; */
   height: auto;
   display: none;
 }
@@ -906,7 +906,7 @@ body.locked {
   -ms-flex-align: center;
   align-items: center;
   color: #fff;
-  padding-bottom: 30px;
+  padding-bottom: 75px;
   padding-top: 75px;
 }
 
@@ -1058,34 +1058,53 @@ body.locked {
 }
 
 .looking {
-  padding: 50px 0 100px;
+  padding: 50px 40px 100px;
   color: #fff;
   overflow: hidden;
 }
 
 .looking__title {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
 .looking__txt {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .looking__box {
-  font-size: 12px;
-  line-height: 16px;
-  position: relative;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .looking__box-image {
-  position: absolute;
-  bottom: -231px;
-  right: -94px;
-  width: 276px;
-  height: 309px;
+  width: 100%;
+  height: auto;
+}
+
+.looking__box-image-big {
+  display: none;
+}
+
+@media (min-width: 720px) {
+  .looking__box {
+    width: 100%;
+  }
+
+  .looking__box-image {
+    display: none;
+  }
+
+  .looking__box-image-big {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 /* .looking__item {
@@ -1587,18 +1606,7 @@ body.locked {
     margin-bottom: 40px;
     font-size: 14px;
   }
-  .looking__box {
-    font-size: 14px;
-    line-height: 18px;
-    max-width: 550px;
-    margin: 0 auto;
-  }
-  .looking__box-image {
-    width: 336px;
-    height: 377px;
-    right: -73px;
-    bottom: -32px;
-  }
+
   .looking__item {
     padding: 23px 240px 23px 37px;
   }
@@ -1804,16 +1812,11 @@ body.locked {
     margin-bottom: 70px;
   }
   .looking__box {
-    max-width: 875px;
-    font-size: 18px;
-    line-height: 27px;
+    max-width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
   }
-  .looking__box-image {
-    width: 356px;
-    height: 400px;
-    right: 0;
-    bottom: -45px;
-  }
+
   .looking__item {
     padding: 20px 190px 26px 37px;
   }
@@ -1904,8 +1907,6 @@ body.locked {
     padding-right: 40px;
   }
 }
-
-
 
 .stupid_bold_text {
   font-weight: 900;
@@ -2078,9 +2079,7 @@ body.locked {
   padding-bottom: 20px;
 }
 
-
-@media (min-width: 410px) {
-
+@media (min-width: 320px) {
   .card-container {
     display: grid;
     grid-template-columns: 100%;
@@ -2100,7 +2099,7 @@ body.locked {
     height: 300px;
     background-color: #190f48;
   }
-  
+
   .card-inner {
     position: relative;
     width: 100%;
@@ -2108,7 +2107,7 @@ body.locked {
     transform-style: preserve-3d;
     transition: transform 0.6s;
   }
-  
+
   .card-front,
   .card-back {
     position: absolute;
@@ -2121,20 +2120,16 @@ body.locked {
     justify-content: center;
     align-items: center;
   }
-
 }
 
-@media (min-width: 555px) {
-
+@media (min-width: 480px) {
   .card {
     width: 70%;
     height: 320px;
   }
-
 }
 
-@media (min-width: 660px) {
-
+@media (min-width: 580px) {
   .card {
     width: 60%;
     height: 320px;
@@ -2145,27 +2140,27 @@ body.locked {
     padding-top: 10px;
     padding-left: 10px;
   }
-  
+
   .challenge__card-header {
     font-size: 17px;
     line-height: 30px;
     padding-top: 20px;
     padding-left: 10px;
   }
-  
+
   .challenge__card-task {
     font-size: 15px;
     line-height: 20px;
     padding: 10px;
   }
-  
+
   .challenge__card-description {
     font-weight: 400;
     font-size: 15px;
     line-height: 17px;
     padding: 10px;
   }
-  
+
   .challenge__card-hashtags {
     font-size: 15px;
     line-height: 20px;
@@ -2173,8 +2168,7 @@ body.locked {
     padding: 10px;
   }
 }
-@media (min-width: 768px) {
-
+@media (min-width: 720px) {
   .card {
     width: 55%;
     height: 350px;
@@ -2185,27 +2179,27 @@ body.locked {
     padding-top: 10px;
     padding-left: 10px;
   }
-  
+
   .challenge__card-header {
     font-size: 17px;
     line-height: 30px;
     padding-top: 20px;
     padding-left: 10px;
   }
-  
+
   .challenge__card-task {
     font-size: 15px;
     line-height: 20px;
     padding: 10px;
   }
-  
+
   .challenge__card-description {
     font-weight: 400;
     font-size: 15px;
     line-height: 17px;
     padding: 10px;
   }
-  
+
   .challenge__card-hashtags {
     font-size: 15px;
     line-height: 20px;
@@ -2214,12 +2208,11 @@ body.locked {
   }
 }
 
-@media (min-width: 965px) {
-  
+@media (min-width: 890px) {
   .container {
     max-width: 900px;
   }
-  
+
   .card-container {
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
@@ -2292,19 +2285,19 @@ body.locked {
     padding-left: 10px;
     padding-top: 0;
   }
-  
+
   .challenge__card-task {
     font-size: 1.2vw;
     line-height: 1.4vw;
     padding: 10px;
   }
-  
+
   .challenge__card-description {
     font-size: 1.2vw;
     line-height: 1.4vw;
     padding: 10px;
   }
-  
+
   .challenge__card-hashtags {
     font-size: 1.2vw;
     line-height: 1.4vw;
@@ -2313,7 +2306,6 @@ body.locked {
   }
 }
 @media (min-width: 1280px) {
-  
   .container {
     max-width: 1140px;
   }
@@ -2335,19 +2327,19 @@ body.locked {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  
+
   .challenge__card-task {
     font-size: 16px;
     line-height: 20px;
     padding: 10px;
   }
-  
+
   .challenge__card-description {
     font-size: 16px;
     line-height: 18px;
     padding: 10px;
   }
-  
+
   .challenge__card-hashtags {
     font-size: 16px;
     line-height: 18px;
@@ -2355,7 +2347,6 @@ body.locked {
     padding-left: 10px;
   }
 }
-
 
 @media (min-width: 1819.98px) {
   .container {
@@ -2437,16 +2428,16 @@ body.locked {
     font-size: 24px;
   }
   .looking__box {
-    max-width: 1100px;
+    max-width: 100%;
     font-size: 24px;
     line-height: 36px;
   }
-  .looking__box-image {
+  /* .looking__box-image {
     width: 532px;
     height: 598px;
     right: -100px;
     bottom: -82px;
-  }
+  } */
   .looking__item {
     padding: 29px 185px 29px 47px;
   }
@@ -2552,19 +2543,19 @@ body.locked {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  
+
   .challenge__card-task {
     font-size: 16px;
     line-height: 20px;
     padding: 10px;
   }
-  
+
   .challenge__card-description {
     font-size: 16px;
     line-height: 18px;
     padding: 10px;
   }
-  
+
   .challenge__card-hashtags {
     font-size: 16px;
     line-height: 18px;
@@ -2583,5 +2574,10 @@ body.locked {
     font-size: 22px;
     padding-top: 50px;
     padding-right: 48px;
+  }
+
+  .looking__box {
+    max-width: 1920px;
+    margin: 0 auto;
   }
 }
