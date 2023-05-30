@@ -235,7 +235,7 @@ table {
   -ms-grid-rows: auto 1fr auto;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
-  padding: 0 30px;
+  /* padding: 0 30px; */
 }
 
 .header {
