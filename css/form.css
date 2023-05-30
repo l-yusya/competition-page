@@ -441,7 +441,7 @@ table {
 .gamers__form-for-checked,
 .gamers__form-for-checked-2 {
   display: inline-block;
-  font-family: Cairo;
+  /* font-family: Cairo; */
   font-size: 16px;
   line-height: 20px;
   padding-left: 30px;
