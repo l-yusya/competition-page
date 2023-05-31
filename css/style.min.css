@@ -165,6 +165,10 @@ a:active {
   outline: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 nav,
 footer,
 header,
