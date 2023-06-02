@@ -513,7 +513,7 @@ table {
 .gamers__request svg {
   width: 60px;
   height: 60px;
-  fill: #16c75e;
+  /* fill: #16c75e; */
 }
 
 .gamers__request-title {

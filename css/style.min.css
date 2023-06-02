@@ -2687,3 +2687,7 @@ body.locked {
     margin: 0 auto;
   }
 }
+
+.link-l a {
+  color: #00a3ff;
+}
